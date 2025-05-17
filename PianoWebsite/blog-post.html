@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - PianoMaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>PianoMaster</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="cta-button-container">
+                <a href="shop.html" class="nav-cta-button">View Catalogue</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1 id="blog-title">Blog Post Title</h1>
+            <div class="blog-meta">
+                <span class="blog-category" id="blog-category">Category</span>
+                <span class="blog-date" id="blog-date">Date</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Post Content -->
+    <section class="blog-post-section">
+        <div class="container">
+            <div class="blog-post-layout">
+                <!-- Main Blog Content -->
+                <div class="blog-post-main" data-aos="fade-up">
+                    <div class="blog-post-content">
+                        <div class="blog-featured-image">
+                            <img id="blog-image" src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Blog Post Featured Image">
+                        </div>
+                        
+                        <div id="blog-content" class="blog-content">
+                            <!-- Content will be filled dynamically via JavaScript -->
+                            <p>Loading content...</p>
+                        </div>
+                        
+                        <div class="blog-tags">
+                            <h4>Tags:</h4>
+                            <div class="tag-list" id="blog-tags">
+                                <!-- Tags will be filled dynamically -->
+                            </div>
+                        </div>
+                        
+                        <div class="blog-author">
+                            <div class="author-avatar">
+                                <img id="author-image" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Author Image">
+                            </div>
+                            <div class="author-info">
+                                <h4 id="author-name">Author Name</h4>
+                                <p id="author-bio">Author biography will be displayed here.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="share-post">
+                            <h4>Share this post:</h4>
+                            <div class="social-share">
+                                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="pinterest"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-comments">
+                        <h3>Comments (3)</h3>
+                        <div class="comment">
+                            <div class="comment-avatar">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Comment Author">
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-info">
+                                    <h4>John Smith</h4>
+                                    <span class="comment-date">June 18, 2024</span>
+                                </div>
+                                <p>This article is extremely helpful! I've been struggling with my practice routine, but these techniques have already made a difference.</p>
+                                <a href="#" class="reply-link">Reply</a>
+                            </div>
+                        </div>
+                        
+                        <div class="comment">
+                            <div class="comment-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Comment Author">
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-info">
+                                    <h4>Lisa Johnson</h4>
+                                    <span class="comment-date">June 17, 2024</span>
+                                </div>
+                                <p>I've been using technique #3 for a week now and I'm seeing substantial improvements in my finger strength. Thank you for sharing these insights!</p>
+                                <a href="#" class="reply-link">Reply</a>
+                            </div>
+                        </div>
+                        
+                        <div class="comment">
+                            <div class="comment-avatar">
+                                <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Comment Author">
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-info">
+                                    <h4>Robert Chen</h4>
+                                    <span class="comment-date">June 16, 2024</span>
+                                </div>
+                                <p>As a piano teacher, I recommend these practice methods to all my students. Spaced repetition is particularly effective. Great article!</p>
+                                <a href="#" class="reply-link">Reply</a>
+                            </div>
+                        </div>
+                        
+                        <div class="comment-form">
+                            <h3>Leave a Comment</h3>
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="comment-name">Name</label>
+                                        <input type="text" id="comment-name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment-email">Email</label>
+                                        <input type="email" id="comment-email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="comment-text">Comment</label>
+                                    <textarea id="comment-text" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="submit-comment">Post Comment</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Blog Sidebar -->
+                <div class="blog-sidebar" data-aos="fade-left">
+                    <!-- Search -->
+                    <div class="sidebar-widget">
+                        <h3>Search</h3>
+                        <div class="blog-search">
+                            <input type="text" placeholder="Search articles...">
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="sidebar-widget">
+                        <h3>Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Practice Tips <span>(8)</span></a></li>
+                            <li><a href="#">Music Theory <span>(6)</span></a></li>
+                            <li><a href="#">Equipment <span>(4)</span></a></li>
+                            <li><a href="#">Fundamentals <span>(7)</span></a></li>
+                            <li><a href="#">Performance <span>(5)</span></a></li>
+                            <li><a href="#">History <span>(3)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts -->
+                    <div class="sidebar-widget">
+                        <h3>Recent Posts</h3>
+                        <div class="recent-posts">
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Practice Techniques">
+                                <div class="recent-post-info">
+                                    <h4><a href="#">5 Effective Practice Techniques</a></h4>
+                                    <span>June 15, 2024</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1551970634-747846a548cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Music Theory">
+                                <div class="recent-post-info">
+                                    <h4><a href="#">Understanding Music Theory</a></h4>
+                                    <span>June 8, 2024</span>
+                                </div>
+                            </div>
+                            <div class="recent-post">
+                                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Choosing the Right Piano">
+                                <div class="recent-post-info">
+                                    <h4><a href="#">Choosing the Right Piano</a></h4>
+                                    <span>May 27, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div class="sidebar-widget">
+                        <h3>Newsletter</h3>
+                        <div class="sidebar-newsletter">
+                            <p>Stay updated with our latest articles and piano tips</p>
+                            <form class="sidebar-newsletter-form">
+                                <input type="email" placeholder="Your email address">
+                                <button type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Related Posts -->
+                    <div class="sidebar-widget">
+                        <h3>Related Posts</h3>
+                        <div class="related-posts">
+                            <div class="related-post">
+                                <img src="https://images.unsplash.com/photo-1552422535-c45813c61732?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Practice Schedules">
+                                <div class="related-post-info">
+                                    <h4><a href="#">Creating Effective Practice Schedules</a></h4>
+                                    <span>May 5, 2024</span>
+                                </div>
+                            </div>
+                            <div class="related-post">
+                                <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" alt="Overcoming Plateaus">
+                                <div class="related-post-info">
+                                    <h4><a href="#">Overcoming Practice Plateaus</a></h4>
+                                    <span>April 18, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Articles Section -->
+    <section class="related-articles">
+        <div class="container">
+            <h2 data-aos="fade-up">You May Also Like</h2>
+            <div class="related-articles-grid" data-aos="fade-up" data-aos-delay="100">
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1551970634-747846a548cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Understanding Music Theory">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Music Theory</span>
+                            <span class="blog-date">June 8, 2024</span>
+                        </div>
+                        <h3>Understanding Music Theory: Why It's Essential for Pianists</h3>
+                        <p>Learn how a solid foundation in music theory can transform your piano playing and musical understanding.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Choosing the Right Piano">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Equipment</span>
+                            <span class="blog-date">May 27, 2024</span>
+                        </div>
+                        <h3>Choosing the Right Piano: Digital vs. Acoustic for Beginners</h3>
+                        <p>A comprehensive guide to help beginners navigate the piano purchasing process with confidence.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image">
+                        <img src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Reading Sheet Music">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Fundamentals</span>
+                            <span class="blog-date">May 19, 2024</span>
+                        </div>
+                        <h3>Mastering Sheet Music: A Step-by-Step Guide for Beginners</h3>
+                        <p>Break down the basics of reading sheet music with our practical approach to music notation.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content" data-aos="fade-up">
+            <h2>Stay Updated</h2>
+            <p>Get the latest piano learning tips and exclusive course offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About PianoMaster</h3>
+                <p>PianoMaster is your premier destination for innovative piano education that combines traditional methods with cutting-edge technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter-mini">
+                    <h4>Newsletter</h4>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PianoMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <div class="empty-cart-message">Your cart is empty</div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="checkout-button disabled">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="blog-post.js"></script>
+</body>
+</html> 

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - PianoMaster</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>PianoMaster</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html" class="active">Shop</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="cta-button-container">
+                <a href="shop.html" class="nav-cta-button">View Catalogue</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Course Catalogue</h1>
+            <p>Discover our comprehensive selection of piano courses</p>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="shop-grid">
+                <!-- Sidebar / Filters -->
+                <div class="shop-sidebar" data-aos="fade-right">
+                    <div class="search-bar">
+                        <input type="text" id="course-search" placeholder="Search courses...">
+                        <button id="search-button"><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Category</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="all" checked> All
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="classical"> Classical
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="jazz"> Jazz
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="pop"> Pop/Contemporary
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="category" value="theory"> Music Theory
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Difficulty</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" name="level" value="all" checked> All Levels
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="level" value="beginner"> Beginner
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="level" value="intermediate"> Intermediate
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" name="level" value="advanced"> Advanced
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Price Range</h3>
+                        <div class="price-slider">
+                            <input type="range" min="0" max="200" value="200" id="price-range">
+                            <div class="price-values">
+                                <span>$0</span>
+                                <span id="price-value">$200+</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="apply-filters" class="filter-button">Apply Filters</button>
+                    <button id="reset-filters" class="filter-button reset">Reset Filters</button>
+                </div>
+                
+                <!-- Course Grid -->
+                <div class="shop-main" data-aos="fade-up">
+                    <div class="shop-header">
+                        <div class="results-count">
+                            <span id="course-count">12</span> courses found
+                        </div>
+                        <div class="sort-options">
+                            <label for="sort-select">Sort by:</label>
+                            <select id="sort-select">
+                                <option value="popular">Most Popular</option>
+                                <option value="newest">Newest</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="shop-course-grid" id="course-grid">
+                        <!-- Course cards will be dynamically added here -->
+                    </div>
+                    
+                    <div class="pagination">
+                        <button class="pagination-button active">1</button>
+                        <button class="pagination-button">2</button>
+                        <button class="pagination-button">3</button>
+                        <button class="pagination-button next">Next <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <div class="empty-cart-message">Your cart is empty</div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-amount">$0.00</span>
+            </div>
+            <button class="checkout-button">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content" data-aos="fade-up">
+            <h2>Stay Updated</h2>
+            <p>Get the latest piano learning tips and exclusive course offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About PianoMaster</h3>
+                <p>PianoMaster is your premier destination for innovative piano education that combines traditional methods with cutting-edge technology.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter-mini">
+                    <h4>Newsletter</h4>
+                    <form class="footer-newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PianoMaster. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script src="shop.js"></script>
+</body>
+</html> 
