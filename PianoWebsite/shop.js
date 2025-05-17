@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "jazz",
             level: "intermediate",
             price: 59.99,
-            image: "https://images.unsplash.com/photo-1542577722-a0274557f3cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+            image: "https://images.unsplash.com/photo-1578410170381-5fe97ef7d370?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             rating: 4.7,
             students: 723,
             description: "Dive into blues piano styles and techniques to add soul to your playing."
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "classical",
             level: "beginner",
             price: 29.99,
-            image: "https://images.unsplash.com/photo-1503712501487-c33886f0ede5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+            image: "https://images.unsplash.com/photo-1746155885870-ba90e7fcdcbc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             rating: 4.9,
             students: 2134,
             description: "A fun and engaging introduction to piano for young learners."
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "pop",
             level: "advanced",
             price: 119.99,
-            image: "https://images.unsplash.com/photo-1554446422-d05db23719d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+            image: "https://images.unsplash.com/photo-1680070568461-0342ba529988?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             rating: 4.8,
             students: 412,
             description: "Learn to play and compose emotional piano pieces for film and media."
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "theory",
             level: "intermediate",
             price: 69.99,
-            image: "https://images.unsplash.com/photo-1521804106799-c7e3c6c6bcf0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+            image: "https://images.unsplash.com/photo-1595441464981-f14316f1b623?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
             rating: 4.6,
             students: 683,
             description: "Master keyboard harmony concepts to enrich your piano arrangements."
